@@ -1,7 +1,7 @@
 # ---
 # jupyter:
 #   jupytext:
-#     formats: ipynb,Rmd,R:percent
+#     formats: ipynb,R:percent
 #     text_representation:
 #       extension: .R
 #       format_name: percent
@@ -34,5 +34,5 @@ head(df)
 # %%
 
 df %>% 
-    filter(Entity == "AGO") %>%
+    filter(Entity == "GBR") %>%
     ggplot(aes(x=Year, y=headcount_ratio_1_90)) + geom_line()
